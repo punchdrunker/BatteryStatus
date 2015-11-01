@@ -1,6 +1,5 @@
 package com.example.batterystatus;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,15 +20,17 @@ public class MainActivity extends AppCompatActivity {
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startService(new Intent(getApplicationContext(), BatteryWatchService.class));
+                // TODO: 2.BatteryWatchServiceを起動しよう
             }
         });
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                stopService(new Intent(getApplicationContext(), BatteryWatchService.class));
+                // TODO: 3.BatteryWatchServiceを停止しよう
             }
         });
+
+        // TODO: 1.バッテリー残量を取得してLog出力してみよう
     }
 
     @Override
